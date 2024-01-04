@@ -1,0 +1,6 @@
+framework module Pods_RecordApp {
+  umbrella header "Pods-RecordApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+
+struct Subj {
+    var subjectTitle: String
+    
+}

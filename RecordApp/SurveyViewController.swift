@@ -8,13 +8,34 @@
 
 import UIKit
 
-class SurveyViewController: UIViewController {
+class SurveyViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    var enrolledSubjects = [Dictionary<String,Any>()]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.enrolledSubjects.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "subjectCell") as! UITableViewCell
+        let subject = self.enrolledSubjects[indexPath.row]
+        
+        if let title = subject["subject"] as? String{
+            cell.textLabel?.text = title
+        }
+        return cell
+    }
+    
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("enrolled Sbujects", enrolledSubjects)
         // Do any additional setup after loading the view.
     }
+    
+    
+    
     
 
     /*

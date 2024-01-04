@@ -10,6 +10,7 @@ import UIKit
 
 class EnrolledSubjectsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var TitleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -10,4 +10,5 @@ import UIKit
 
 class SubjectViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var subjectLabel: UILabel!
 }

@@ -9,7 +9,10 @@
 import UIKit
 
 class SurveyAnswersTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var subjectLabel: UILabel!
+    
+    @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var gradeLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

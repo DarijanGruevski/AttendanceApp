@@ -10,4 +10,5 @@ import UIKit
 
 class StudentEnrollSubjectsCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var subjectLabel: UILabel!
 }

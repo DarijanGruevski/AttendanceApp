@@ -10,6 +10,7 @@ import UIKit
 
 class checkAttendanceTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var attendanceLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
